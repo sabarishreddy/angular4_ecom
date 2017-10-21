@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <app-header (navSelect)="toggleNav($event)"></app-header>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <app-recipes *ngIf="recipeSelected"></app-recipes>
+            <app-shopping-list *ngIf="!recipeSelected"></app-shopping-list>
+        </div>
+
+    </div>
+</div>
