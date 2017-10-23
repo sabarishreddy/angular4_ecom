@@ -5,6 +5,6 @@
 </div>
 <div class="row" *ngFor="let recipe of recipes" >
   <div class="col-xs-12">
-    <app-recipe-item (recipeClick)="loadRecipe(recipe)" [recipe]="recipe" ></app-recipe-item>
+    <app-recipe-item [recipe]="recipe" ></app-recipe-item>
   </div>
 </div>
